@@ -11,7 +11,16 @@
         "persistent" : false
 
     },
-
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.primevideo.com/*",
+          "https://www.netflix.com/*",
+          "https://www.youtube.com/*"
+        ],
+        "js": ["content.js"]
+      }
+    ],
     "page_action": {
       "default_popup": "popup.html"
     }
