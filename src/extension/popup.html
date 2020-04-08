@@ -4,26 +4,34 @@
       <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
       <style>
 
-        h1{
-          color: white;
+        h5{
+          color: black;
         }
 
         body {
           min-width: 300px;
-          background-color: #121212;
+          background-color: white;
         }
-        button {
-          height: 30px;
-          outline: none;
+        .main{
+          display: block;
+        }
+        .join-server{
+          display: none;
         }
       </style>
     </head>
+
     <body>
-      <div class="tc">
-        <h1>Binge Party</h1>
-        <button id="changeColor">click here</button>
+      <h3 class = "tc">Binge Party</h3>
+      <div class="tc main">
+        <a class="f6 link dim br3 ba bw1 ph3 pv2 mb2 dib black">Create Server</a>
+        <br>
+        <a class="f6 link dim br3 ba bw1 ph3 pv2 mb2 dib black" id = "joinServerButton" onclick="joinServer">Join Server</a>
       </div>
-      
+      <div class="tc join-server">
+        <label class="fw6 lh-copy f6" for="email-address">Name: </label>
+        <input class="pa2 ba bg-transparent" id="server-id">    
+      </div>
       <script type="text/javascript" src="popup.js"></script>
     </body>
   </html>
